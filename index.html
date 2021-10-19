@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="bodycontainer">
+        <div class="navcontainer row nav">
+            <div class="navleft col-2 justifyaround">
+                <h1>Dodgerblue</h1>
+                <input type="text" placeholder="Search..">
+            </div>
+            <div class="navright col justifycenter">
+                <input id="loginbtn" class="btn" type="button" value="login" onclick="return onClick(this);" />
+
+                    <script type="text/javascript">
+                        function onclick(buttontext)
+                            {
+                            if ( buttontext.value === "login" )
+                            buttontext.value = "logout";
+                            else
+                            buttontext.value = "login";
+                            }
+                        </script>
+            </div>
+        </div>
+        <div class="row justifyend">
+            <div class="col-2">
+                <div class="box-1 justifycenter">
+                    
+
+                </div>
+                <div class="box-2">
+                    <div class="columneven">
+                        <ul>
+                            <li>Ninja</li>
+                            <li>noun</li>
+                            <li>Plural: ninjas</li>
+                            <li><button class= "btn" onclick="alert('Ninja was liked')">13 likes</button></li><!-- <button onclick="alert('hello')">Click Me!</button> -->
+                            
+                        </ul>
+                    </div>
+                    <div class="justifycenter">
+                        <p>A practitioner skilled in the Japanese art of ninjutsu</p>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="col justifystart">
+                <div class="box-4">
+                    <div class="columneven">
+                        <h2>Dojonary is defined by YOU</h2>
+                        <button id="adddefinition" class="btn" onclick="removeDef()">Add Definition</button>
+                        
+                    
+                    </div>
+
+                </div>
+                <div class="box-3">
+
+                </div>
+                
+
+            </div>
+        </div>
+        <div class="row justifyend">
+            
+
+        </div>
+    </div>
+</body>
+</html>
+<!-- <button onclick="alert('hello')">Click Me!</button> -->
+
